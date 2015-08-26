@@ -1,0 +1,55 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Sans-Serif;
+    font-size: 100%;
+}
+.content {
+    height: 100%;
+}
+.top-menu {
+    height: 2em;
+    width: 100%;
+    background-color: #333333;
+}
+.top-menu .menu-item {
+    display: block;
+    float: right;
+    text-decoration: none;
+    margin: .3em 1em 0 0;
+    color: #555555;
+}
+.top-menu .menu-item:hover {
+    text-decoration: underline;
+}
+.image-panel {
+    width: 100%;
+    height: 40em;
+    background-color: #ffffff;
+    position: relative;
+}
+.image-panel .image {
+    height: 40em;
+    position: absolute;
+    right: 0;
+}
+.point-panel {
+    background-color: #333333;
+    text-align: center;
+}
+.point-panel:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+.point-panel .point {
+    width: 10em;
+    height: 10em;
+    background-color: #eeeeee;
+    margin: 1em;
+    float: left;
+    border-radius: .5em;
+}
