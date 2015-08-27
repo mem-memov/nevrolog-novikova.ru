@@ -15,6 +15,10 @@ html, body {
     background-color: #333333;
     position: relative;
 }
+.top-menu .link {
+    display: block;
+    position: absolute;
+}
 .top-menu .menu-item {
     display: block;
     position: absolute;
