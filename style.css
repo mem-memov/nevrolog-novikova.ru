@@ -12,17 +12,38 @@ html, body {
 .content .stop-float {
     clear: both;
 }
-.top-menu {
+.content .panel {
+    position: relative;
+}
+.content .panel .title {
+    display: block;
+}
+.content .panel .title h1 {
+    padding: 1em 0 1em 1em;
+    font-weight: bold;
+    font-size: 2em;
+}
+.content .panel .top-button {
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    text-decoration: none;
+    padding: .2em;
+    border: .1em solid;
+    border-radius: .2em;
+}
+.content .top-menu {
     height: 2em;
     width: 100%;
     background-color: #333333;
     position: relative;
 }
-.top-menu .link {
+.content .top-menu .link {
     display: block;
     position: absolute;
 }
-.top-menu .menu-item {
+.content .top-menu .menu-item {
     display: block;
     position: absolute;
     right: 0;
@@ -30,52 +51,51 @@ html, body {
     margin: .3em 1em 0 0;
     color: #cccccc;
 }
-.top-menu .menu-item:hover {
+.content .top-menu .menu-item:hover {
     color: #ffffff;
 }
-.image-panel {
+.content .image.panel {
     width: 100%;
     height: 40em;
     background-color: #ffffff;
-    position: relative;
 }
-.image-panel .image {
+.content .image.panel .image {
     height: 40em;
     position: absolute;
     right: 0;
 }
-.image-panel .presentation {
+.content .image.panel .presentation {
     height: 100%;
     margin-right: 30em;
     margin-left: 10em;
 }
-.image-panel .presentation .name {
+.content .image.panel .presentation .name {
     width: 60%;
     margin: 0 auto 0 auto;
     font-size: 2em;
     padding-top: 2em;
 }
-.image-panel .presentation .speciality {
+.content .image.panel .presentation .speciality {
     width: 60%;
     margin: 0 auto 0 auto;
     padding-top: 1em;
 }
-.image-panel .presentation .degree {
+.content .image.panel .presentation .degree {
     width: 60%;
     margin: 0 auto 0 auto;
     padding-top: 1em;
 }
-.point-panel {
+.content .point.panel {
     background-color: #333333;
     text-align: center;
 }
-.point-panel:after { 
+.content .point.panel:after { 
    content: " ";
    display: block; 
    height: 0; 
    clear: both;
 }
-.point-panel .point {
+.content .point.panel .point {
     width: 10em;
     height: 10em;
     background-color: #444444;
@@ -84,130 +104,82 @@ html, body {
     float: left;
     border-radius: .5em;
 }
-.point-panel .point .container {
+.content .point.panel .point .container {
     display: table-cell;
     text-align: center; 
     vertical-align: middle;
     height: 10em;
 }
-.point-panel .point .container .link {
+.content .point.panel .point .container .link {
     text-decoration: none;
     color: #cccccc;
 }
-.point-panel .point .container .link:hover {
+.content .point.panel .point .container .link:hover {
     color: #ffffff;
 }
-.pir-panel {
+.content .pir.panel {
     height: 50em;
     background-color: #ffffff;
-    position: relative;
 }
-.pir-panel .title {
+.content .pir.panel .title {
     color: #333333;
-    display: block;
-    padding: 1em 0 1em 1em;
-    font-weight: bold;
-    font-size: 2em;
 }
-.pir-panel .top-button {
-    display: block;
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-    text-decoration: none;
+.content .pir.panel .top-button {
     color: #333333;
-    padding: .2em;
-    border: .1em solid #333333;
-    border-radius: .2em;
+    border-color: #333333;
 }
-.blokada-panel {
+.content .blokada.panel {
     height: 50em;
     background-color: #333333;
-    position: relative;
 }
-.blokada-panel .title {
+.content .blokada.panel .title {
     color: #ffffff;
-    display: block;
-    padding: 1em 0 1em 1em;
-    font-weight: bold;
-    font-size: 2em;
 }
-.blokada-panel .top-button {
-    display: block;
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-    text-decoration: none;
+.content .blokada.panel .top-button {
     color: #ffffff;
-    padding: .2em;
-    border: .1em solid #ffffff;
-    border-radius: .2em;
+    border-color: #ffffff;
 }
-.prof-panel {
+.content .prof.panel {
     height: 50em;
     background-color: #ffffff;
-    position: relative;
 }
-.prof-panel .title {
+.content .prof.panel .title {
     color: #333333;
-    display: block;
-    padding: 1em 0 1em 1em;
-    font-weight: bold;
-    font-size: 2em;
 }
-.prof-panel .top-button {
-    display: block;
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-    text-decoration: none;
+.content .prof.panel .top-button {
     color: #333333;
-    padding: .2em;
-    border: .1em solid #333333;
-    border-radius: .2em;
+    border-color: #333333;
 }
-.contact-panel {
+.content .contact.panel {
     background-color: #333333;
-    position: relative;
     padding: 0 0 2em 0;
 }
-.contact-panel .title {
+.content .contact.panel .title {
     color: #ffffff;
-    display: block;
-    padding: 1em 0 1em 1em;
-    font-weight: bold;
-    font-size: 2em;
 }
-.contact-panel .top-button {
-    display: block;
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-    text-decoration: none;
+.content .contact.panel .top-button {
     color: #ffffff;
-    padding: .2em;
-    border: .1em solid #ffffff;
-    border-radius: .2em;
+    border-color: #ffffff;
 }
-.contact-panel .info {
+.content .contact.panel .info {
     width: 40em;
     margin: 4em 1em 1em 1em;
     float: left;
 }
-.contact-panel .entry {
+.content .contact.panel .entry {
     color: #ffffff;
     margin-bottom: 1em;
 }
-.contact-panel .info .entry .label {
+.content .contact.panel .info .entry .label {
     width: 10em;
     text-align: right;
     padding: 0 1em 0 0;
     float: left;
 }
-.contact-panel .info .entry .value {
+.content .contact.panel .info .entry .value {
     margin-left: -10em;
 }
-.contact-panel .map {
+.content .contact.panel .map {
     border: 0.2em solid #cccccc;
     border-radius: 1em;
     float: left;
