@@ -18,7 +18,7 @@ html, body {
 .content .panel .title {
     display: block;
 }
-.content .panel .title h1 {
+.content .panel .title h2 {
     padding: 1em 0 1em 1em;
     font-weight: bold;
     font-size: 2em;
